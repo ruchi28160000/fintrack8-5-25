@@ -1,0 +1,201 @@
+body {
+  background: #f5f7fa;
+}
+
+.fintrack-header {
+  background: #f6f8f8;
+  border-bottom: 1px solid #e3e8ee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 36px 16px 36px;
+}
+
+.fintrack-logo {
+  height: 48px;
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+}
+
+.fintrack-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #007991;
+  letter-spacing: 2px;
+}
+
+.fintrack-tagline {
+  font-size: 1.1rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.user-initial {
+  background: #e3e8ee;
+  color: #007991;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.fintrack-main {
+  max-width: 1400px; /* or 1350px */
+  margin: 0 auto;
+  padding: 28px 24px 32px 24px; /* slightly wider padding */
+}
+
+.holdings-title-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e3e4e6; /* soft light grey divider */
+  background-color: #f5f6f8; /* lighter grey tone */
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.035); /* subtle shadow */
+}
+
+.holdings-title-row h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4b5563; /* slightly softer dark grey */
+  margin: 0;
+}
+
+.holdings-title-row .actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Transaction Table Styles */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem; /* Match font size with holdings table */
+  margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 0.7rem 0.5rem; /* Match padding with holdings table */
+  border-bottom: 1px solid #f0f0f0; /* Subtle bottom border */
+  text-align: center; /* Center-align text */
+}
+
+.transaction-table th {
+  background: #f7fafd; /* Light blue background for header */
+  color: #2471a3; /* Blue text color for header */
+  font-weight: 600; /* Bold header text */
+}
+
+.transaction-table td.gain {
+  color: #27ae60; /* Green for gains */
+}
+
+.transaction-table td.loss {
+  color: #e74c3c; /* Red for losses */
+}
+h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.summary-row {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+.summary-card {
+  flex: 1;
+  background: #f3f4f6; /* Light grey background */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Slightly stronger shadow */
+  padding: 24px 0 18px 0;
+  text-align: center;
+  border: 1px solid #d1d5db; /* subtle grey border */
+}
+
+.summary-label {
+  font-size: 1.02rem;
+  color: #6b7280; /* grey-500 */
+  margin-bottom: 8px;
+}
+
+.summary-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #374151; /* grey-800 */
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+/* Navigation Buttons Container */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Space between buttons */
+  margin: 20px 0; /* Add spacing above and below the buttons */
+  background: #f5f6f8; /* Light gray background to match other containers */
+  border-radius: 12px; /* Rounded corners for the container */
+  padding: 12px 20px; /* Padding inside the container */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.035); /* Subtle shadow for depth */
+  border: 1px solid #e3e4e6; /* Subtle gray border for the container */
+}
+
+/* Navigation Button Styles */
+.nav-btn {
+  padding: 12px 24px; /* Button padding */
+  font-size: 1rem; /* Font size consistent with tabs */
+  font-weight: 500; /* Medium font weight */
+  color: #4b5563; /* Dark gray text color */
+  background-color: #ffffff; /* White background for buttons */
+  border: 1px solid #e3e4e6; /* Subtle gray border for buttons */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+.nav-btn:hover {
+  background-color: #f0f1f3; /* Slightly darker gray on hover */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.nav-btn:active {
+  background-color: #e3e4e6; /* Slightly darker gray on click */
+  transform: scale(0.95); /* Slight shrink effect */
+}
+
+/* Active Navigation Button */
+.nav-btn.active {
+  background-color: #4b5563; /* Darker gray for the active tab */
+  color: #e5e7eb; /* Light gray text for contrast */
+  font-weight: 800; /* Bolder font for emphasis */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  border: 2px solid #2d3748; /* Darker and thicker border for emphasis */
+  transform: scale(1.05); /* Slight zoom effect for the active tab */
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease, border 0.2s ease; /* Smooth transitions */
+}

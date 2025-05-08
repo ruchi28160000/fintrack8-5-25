@@ -1,0 +1,293 @@
+.dashboard-container {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fafbfc;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  background: #f6f8f8;
+  border-bottom: 1px solid #e3e8ee;
+  padding: 1.5rem 2rem 1rem 2rem;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.fintrack-logo {
+  height: 48px;
+}
+
+.fintrack-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2471a3;
+  letter-spacing: 2px;
+}
+
+.fintrack-tagline {
+  font-size: 1rem;
+  color: #888;
+  margin-left: 1rem;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.btn-logout {
+  background: #fff;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-logout:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.user-initial {
+  background: #e3e8ee;
+  color: #2471a3;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.dashboard-main {
+  padding: 2rem 2.5rem 1rem 2.5rem;
+}
+
+.summary-row {
+  display: flex;
+  gap: 28px; /* Adjusted for more space */
+  margin-bottom: 32px; /* Space between rows */
+}
+
+.summary-card {
+  flex: 1;
+  background: #f3f4f6; /* Light grey background for a cleaner look */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Slightly lighter shadow for subtle definition */
+  padding: 24px 0 18px 0;
+  text-align: center;
+  border: 1px solid #d1d5db; /* Subtle grey border */
+}
+
+.summary-label {
+  font-size: 1.02rem;
+  color: #6b7280; /* Grey-500 for label text */
+  margin-bottom: 8px;
+}
+
+.summary-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #374151; /* Grey-800 for the value text */
+}
+
+.text-success {
+  color: #28a745 !important; /* Green for gain */
+}
+
+.text-danger {
+  color: #dc3545 !important; /* Red for loss */
+}
+.holdings-title-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e3e4e6; /* soft light grey divider */
+  background-color: #f5f6f8; /* lighter grey tone */
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.035); /* subtle shadow */
+}
+
+.holdings-title-row h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4b5563; /* slightly softer dark grey */
+  margin: 0;
+}
+
+.holdings-title-row .actions {
+  display: flex;
+  gap: 12px;
+}
+
+.summary-title {
+  font-size: 1.1rem;
+  color: #888; /* Grey color for the title */
+  margin-bottom: 0.6rem;
+}
+
+.summary-value.gain,
+.percent.gain {
+  color: #27ae60; /* Green for gain */
+}
+
+.summary-value.loss,
+.percent.loss {
+  color: #e74c3c; /* Red for loss */
+}
+
+.summary-value.percent {
+  font-size: 1.3rem;
+}
+
+/* Optional: Adjusted the border for more subtlety */
+.summary-card {
+  border: 1px solid #e0e0e0; /* Light grey border to separate the cards */
+}
+
+.main-row {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Updated Holdings Card Styles */
+.holdings-card {
+  flex: 2;
+  background: #f5f6f8; /* Light gray background for consistency */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow for better depth */
+  padding: 1.5rem;
+  border: 2px solid #cbd5e1; /* Slightly darker gray border for better outline */
+}
+
+/* Updated Holdings Header */
+.holdings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2471a3; /* Dark gray for better contrast */
+  padding: 0.8rem 1rem; /* Add padding for better spacing */
+  border-bottom: 1px solid #d1d5db; /* Subtle divider for the header */
+}
+
+.btn-view-all {
+  background: #fff;
+  border: 1px solid #2471a3;
+  color: #2471a3;
+  border-radius: 5px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-view-all:hover {
+  background: #2471a3;
+  color: #fff;
+}
+
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.holdings-table th,
+.holdings-table td {
+  padding: 0.7rem 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center;
+}
+
+.holdings-table th {
+  background: #f5f6f8;
+  color: #2471a8;
+  font-weight: 600;
+}
+
+.holdings-table td.gain {
+  color: #27ae60;
+}
+
+.holdings-table td.loss {
+  color: #e74c3c;
+}
+
+.quick-actions-card {
+  flex: 1;
+  background: #f5f6f8; /* Light gray background for better visibility */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(36, 113, 163, 0.1); /* Slightly stronger shadow for depth */
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: stretch;
+  border: 1px solid #d1d5db; /* Subtle gray border for definition */
+}
+
+.quick-actions-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2471a3; /* Retain the blue color for consistency */
+  text-align: center;
+}
+
+.btn-holdings,
+.btn-transactions {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  transition: background 0.2s;
+}
+
+.btn-holdings {
+  background: #2471a3;
+  color: #fff;
+}
+
+.btn-holdings:hover {
+  background: #145080;
+}
+
+.btn-transactions {
+  background: #27ae60;
+  color: #fff;
+}
+
+.btn-transactions:hover {
+  background: #1e8449;
+}
+
+.icon {
+  font-family: 'Noto Emoji', sans-serif;
+}

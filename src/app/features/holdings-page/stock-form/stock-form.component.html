@@ -1,0 +1,37 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <label>Transaction Type</label>
+  <select formControlName="transactionType">
+    <option value="Buy">Buy</option>
+    <option value="Sell">Sell</option>
+  </select>
+
+  <label>stock Name</label>
+  <app-stock-search
+    [placeholder]="'Search for stocks...'"
+    (symbolSelected)="onstockSelected($event)"
+    [disabled]="isEditMode"
+  >
+  </app-stock-search>
+
+  <label>Demat Account</label>
+  <input formControlName="dematAccount" type="text" />
+
+  <label>Date of Investment</label>
+  <input formControlName="purchaseDate" type="date" />
+
+  <label>Number of Shares</label>
+  <input formControlName="numberOfShares" type="number" />
+
+  <label>Brokerage</label>
+  <input formControlName="brokerage" type="number" />
+  <select formControlName="brokerageType">
+    <option value="%">%</option>
+    <option value="rs">Rs</option>
+  </select>
+
+  <label>Purchase Price</label>
+  <input formControlName="purchasePrice" type="number" />
+
+  <button type="submit" [disabled]="form.invalid">Save</button>
+  <button type="button" (click)="cancel.emit()">Cancel</button>
+</form>

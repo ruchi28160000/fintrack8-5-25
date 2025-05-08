@@ -1,0 +1,41 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <label>Transaction Type</label>
+    <select formControlName="transactionType">
+      <option value="Buy">Buy</option>
+      <option value="Sell">Sell</option>
+    </select>
+  
+    <label>Fixed Income Name</label>
+    <input formControlName="fixedIncomeName" type="text" />
+  
+    <label>Investment Date</label>
+    <input formControlName="investmentDate" type="date" />
+  
+    <label>Investment Amount</label>
+    <input formControlName="investmentAmount" type="number" />
+  
+    <label>Coupon Rate (% p.a.)</label>
+    <input formControlName="couponRate" type="number" />
+  
+    <label>Compounding Frequency</label>
+    <select formControlName="compoundingFrequency">
+      <option value="Monthly">Monthly</option>
+      <option value="Quarterly">Quarterly</option>
+      <option value="Half-Yearly">Half-Yearly</option>
+      <option value="Yearly">Yearly</option>
+      <option value="On Maturity">On Maturity</option>
+    </select>
+  
+    <label>Interest Type</label>
+    <select formControlName="interestType">
+      <option value="Accrued">Accrued</option>
+      <option value="Interest Payout">Interest Payout</option>
+    </select>
+  
+    <label>Maturity Date</label>
+    <input formControlName="maturityDate" type="date" />
+  
+    <button type="submit" [disabled]="form.invalid">Save</button>
+    <button type="button" (click)="cancel.emit()">Cancel</button>
+  </form>
+  
